@@ -23,7 +23,8 @@ glimpse(bike_train)
 ## Assign Factors
 bike_train_factored <- bike_train %>%
   mutate(season = as.factor(season)) %>%
-  mutate(holiday = as.factor(holiday))
+  mutate(holiday = as.factor(holiday)) %>%
+  mutate(workingday = as.factor(workingday))
   
 ## Correlation plot
 plot1 <- plot_correlation(bike_train_factored)
